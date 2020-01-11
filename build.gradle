@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'WorldTransport'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven {
+        url "http://repo.nukkitx.com/main/"
+    }
+}
+
+dependencies {
+    implementation "cn.nukkit:nukkit:1.0-SNAPSHOT"
+}
+
+
+jar {
+    manifest {
+        attributes "Main-Class": "WorldTransport.Main"
+    }
+}
