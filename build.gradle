@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'WorldTransport'
+group 'Wormhole'
 version '1.0.0'
 
 sourceCompatibility = 1.8
@@ -20,6 +20,6 @@ dependencies {
 
 jar {
     manifest {
-        attributes "Main-Class": "WorldTransport.Main"
+        attributes "Main-Class": "Wormhole.Main"
     }
 }

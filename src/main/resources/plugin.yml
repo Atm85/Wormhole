@@ -1,9 +1,9 @@
 name: WorldTranport
-main: WorldTransport.Main
+main: Wormhole.Main
 author: iAtomPlaza
 api: 1.0.0
 version: 1.0.0
 permissions:
   world.tp:
-    description: WorldTransport main permission node
+    description: Wormhole main permission node
     default: op

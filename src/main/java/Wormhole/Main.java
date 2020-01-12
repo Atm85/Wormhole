@@ -1,8 +1,8 @@
-package WorldTransport;
+package Wormhole;
 
-import WorldTransport.commands.WorldTpCommand;
-import WorldTransport.commands.WorldlistCommand;
-import WorldTransport.events.FormWindowEvent;
+import Wormhole.commands.WorldTpCommand;
+import Wormhole.commands.WorldlistCommand;
+import Wormhole.events.FormWindowEvent;
 import cn.nukkit.command.CommandMap;
 import cn.nukkit.form.element.ElementButton;
 import cn.nukkit.form.window.FormWindow;
@@ -15,13 +15,13 @@ import java.io.File;
 public class Main extends PluginBase {
 
     public FormWindow formWindow;
-    public String prefix = TextFormat.BOLD+""+TextFormat.DARK_RED+"["+TextFormat.AQUA+"WorldTransport"+TextFormat.DARK_RED+"]"+TextFormat.RESET;
+    public String prefix = TextFormat.BOLD+""+TextFormat.DARK_RED+"["+TextFormat.AQUA+ "Wormhole" +TextFormat.DARK_RED+"]"+TextFormat.RESET;
 
     @Override
     public void onLoad() {
         CommandMap commandMap = this.getServer().getCommandMap();
-        commandMap.register("WorldTransport", new WorldlistCommand("worlds", this));
-        commandMap.register("WorldTransport", new WorldTpCommand("worldtransport", this));
+        commandMap.register("Wormhole", new WorldlistCommand("worlds", this));
+        commandMap.register("Wormhole", new WorldTpCommand("wormhole", this));
     }
 
     @Override

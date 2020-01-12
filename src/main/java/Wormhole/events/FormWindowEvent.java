@@ -1,6 +1,6 @@
-package WorldTransport.events;
+package Wormhole.events;
 
-import WorldTransport.Main;
+import Wormhole.Main;
 import cn.nukkit.Player;
 import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.EventPriority;

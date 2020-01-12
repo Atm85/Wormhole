@@ -1,6 +1,6 @@
-package WorldTransport.commands;
+package Wormhole.commands;
 
-import WorldTransport.Main;
+import Wormhole.Main;
 import cn.nukkit.command.CommandSender;
 import cn.nukkit.command.PluginCommand;
 import cn.nukkit.utils.TextFormat;
