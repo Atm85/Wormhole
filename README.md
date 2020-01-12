@@ -1,19 +1,22 @@
-[![HitCount](http://hits.dwyl.io/TimelessMC/WorldTransport.svg)](http://hits.dwyl.io/TimelessMC/WorldTransport)
-
+[![HitCount](http://hits.dwyl.io/TimelessMC/Wormhole.svg)](http://hits.dwyl.io/TimelessMC/Wormhole)
 
 ###### Note -
 ###### This plugin does not require **any** additional plugins to run!
 
-# WorldTransport
+# Wormhole <img src="https://i.imgur.com/asnp6PW.png" width="50px"/>
 Teleport yourself between other worlds on your server! 
 
 ## permissions
 | node | desc |
 | ---- | ---- |
-| world.tp | allows usage of main command |
+| wormhole.tp | allows usage of main command |
 
 ## commands
 | command | desc | permission value |
 | ------- | ---- | ---------------- |
 | `/worlds` | view contents of worlds folder | no permission required |
-| `/worldtp` | opens *WorldTransport* gui, (select world from form) | `world.tp` |
+| `/worldtp` | opens *Wormhole* gui, (select world from form) | `wormhole.tp` |
+| `/wormhole` | opens *Wormhole* gui, (select world from form) | `wormhole.tp` |
+
+## credits
+Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
