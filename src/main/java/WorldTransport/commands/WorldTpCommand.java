@@ -14,6 +14,7 @@ public class WorldTpCommand extends PluginCommand {
         this.plugin = plugin;
         String[] aliases = {"worldtp"};
         this.setAliases(aliases);
+        this.description = "Teleport yourself between other worlds on the server";
     }
 
     @Override
