@@ -20,7 +20,7 @@ public class WorldTpCommand extends PluginCommand {
     @Override
     public boolean execute(CommandSender sender, String commandLabel, String[] args) {
         if (sender instanceof Player) {
-            if (sender.hasPermission("world.tp") || sender.isOp()) {
+            if (sender.hasPermission("wormhole.tp") || sender.isOp()) {
                 ((Player) sender).showFormWindow(plugin.formWindow, 0);
             }
         } else {
