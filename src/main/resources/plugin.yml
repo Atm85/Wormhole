@@ -7,3 +7,6 @@ permissions:
   world.tp:
     description: Wormhole main permission node
     default: op
+
+depend:
+  - FormAPI
