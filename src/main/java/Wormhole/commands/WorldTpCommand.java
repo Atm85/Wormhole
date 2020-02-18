@@ -21,7 +21,7 @@ public class WorldTpCommand extends PluginCommand {
     public boolean execute(CommandSender sender, String commandLabel, String[] args) {
         if (sender instanceof Player) {
             if (sender.hasPermission("wormhole.tp") || sender.isOp()) {
-                ((Player) sender).showFormWindow(plugin.formWindow, 0);
+                ((Player) sender).showFormWindow(plugin.formAPI.get("WormHole"), plugin.formAPI.getId("WormHole"));
             }
         } else {
             sender.sendMessage("You cannot join worlds silly!");

@@ -22,7 +22,7 @@ public class FormWindowEvent implements Listener {
     public void FormResponseEvent(PlayerFormRespondedEvent event) {
         Player player = event.getPlayer();
         int formId = event.getFormID();
-        if ((event.getResponse() instanceof FormResponseSimple) && (formId == 0)) {
+        if ((event.getResponse() instanceof FormResponseSimple) && (formId == plugin.formAPI.getId("WormHole"))) {
             FormResponseSimple response = (FormResponseSimple) event.getResponse();
             String buttonText = response.getClickedButton().getText();
             if (!plugin.getServer().isLevelLoaded(buttonText)) {

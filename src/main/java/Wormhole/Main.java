@@ -1,5 +1,6 @@
 package Wormhole;
 
+import FormAPI.api.FormAPI;
 import Wormhole.commands.WorldTpCommand;
 import Wormhole.commands.WorldlistCommand;
 import Wormhole.events.FormWindowEvent;
@@ -14,7 +15,7 @@ import java.io.File;
 
 public class Main extends PluginBase {
 
-    public FormWindow formWindow;
+    public FormAPI formAPI = new FormAPI();
     public String prefix = TextFormat.BOLD+""+TextFormat.DARK_RED+"["+TextFormat.AQUA+ "Wormhole" +TextFormat.DARK_RED+"]"+TextFormat.RESET;
 
     @Override
@@ -31,6 +32,7 @@ public class Main extends PluginBase {
         FormWindowSimple formWindow = new FormWindowSimple(prefix, "");
         File worldPath = new File(this.getServer().getPluginPath()+"../worlds");
         File[] worlds = worldPath.listFiles();
+
         assert worlds != null;
         for (File world : worlds) {
             if (world.isDirectory()) {
@@ -38,6 +40,8 @@ public class Main extends PluginBase {
                 formWindow.addButton(button);
             }
         }
-        this.formWindow = formWindow;
+
+        formAPI.add("WormHole", formWindow);
+
     }
 }
